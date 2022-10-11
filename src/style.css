@@ -6,4 +6,69 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#page-wrapper {
+  padding: 25px;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 15px 0;
+}
+
+#content {
+  display: flex;
+  gap: 125px;
+  margin-left: 55px;
+  flex-wrap: wrap;
+}
+
+#list-column {
+  width: 400px;
+}
+
+#list-column .header {
+  display: flex;
+  gap: 55px;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  border: 2px solid #2c2c2c;
+}
+
+ul li {
+  padding: 10px 5px;
+}
+
+ul li:nth-child(even) {
+  background: #d2d2d2;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+}
+
+#form-column {
+  width: 250px;
+}
+
+#form-column form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+form input {
+  padding: 10px 5px;
+  margin: 10px 0;
+  width: 100%;
 }
