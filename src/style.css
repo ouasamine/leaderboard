@@ -29,13 +29,9 @@ h2 {
   flex-wrap: wrap;
 }
 
-#list-column {
-  width: 400px;
-}
-
 #list-column .header {
   display: flex;
-  gap: 55px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -71,4 +67,11 @@ form input {
   padding: 10px 5px;
   margin: 10px 0;
   width: 100%;
+}
+
+.message {
+  display: block;
+  margin-top: 25px;
+  color: green;
+  font-weight: bold;
 }
