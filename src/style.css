@@ -29,13 +29,9 @@ h2 {
   flex-wrap: wrap;
 }
 
-#list-column {
-  width: 400px;
-}
-
 #list-column .header {
   display: flex;
-  gap: 55px;
+  gap: 40px;
   align-items: center;
 }
 
