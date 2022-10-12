@@ -1,6 +1,6 @@
 export default class Game {
   constructor() {
-    this.baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AILK8GYEBS5QEfR1WfuU/';
+    this.baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/nzDrB2XK4pV4ZKmFENCc/';
   }
 
   async addScore(endPoint, userName, userScore) {
