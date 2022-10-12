@@ -68,3 +68,10 @@ form input {
   margin: 10px 0;
   width: 100%;
 }
+
+.message {
+  display: block;
+  margin-top: 25px;
+  color: green;
+  font-weight: bold;
+}
