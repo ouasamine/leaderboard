@@ -5,6 +5,7 @@ const newGame = new Game();
 const formUserInput = document.forms['new-score']['user-name'];
 const formscoreInput = document.forms['new-score']['user-score'];
 const submitBtt = document.querySelector('#add-score');
+const refreshBtt = document.querySelector('#refresh');
 const scoresList = document.querySelector('#list-column ul');
 const messageContainer = document.querySelector('.message');
 
@@ -28,5 +29,15 @@ submitBtt.addEventListener('click', (event) => {
   newGame.addScore('scores/', userName, userScore)
     .then(() => {
       messageContainer.innerText = 'The score has been successfully added';
+      setTimeout(() => { messageContainer.innerText = ''; }, 10000);
+    });
+});
+
+refreshBtt.addEventListener('click', () => {
+  scoresList.innerHTML = '';
+  newGame.getScores('scores/')
+    .then((res) => res.json())
+    .then((json) => {
+      diplayList(json.result);
     });
 });
