@@ -11,6 +11,10 @@
 - JavaScript
 - Webpack
 
+## Live Demo
+
+Check [the live version](https://ouasamine.github.io/leaderboard/) of this project.
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
