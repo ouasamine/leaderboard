@@ -7,10 +7,18 @@ html {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: #d2d2d2;
+  font-weight: 600;
+}
+
+body {
+  background: #0f1319;
 }
 
 #page-wrapper {
   padding: 25px;
+  box-shadow: 1px 1px 10px 1px #5e5e5e;
+  margin: 25px;
 }
 
 h1 {
@@ -25,19 +33,19 @@ h2 {
 #content {
   display: flex;
   gap: 125px;
-  margin-left: 55px;
   flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
 }
 
 #list-column .header {
   display: flex;
-  gap: 40px;
+  gap: 90px;
   align-items: center;
 }
 
 ul {
   list-style: none;
-  border: 2px solid #2c2c2c;
 }
 
 ul li {
@@ -46,11 +54,26 @@ ul li {
 
 ul li:nth-child(even) {
   background: #d2d2d2;
+  color: #2c2c2c;
+}
+
+ul li:nth-child(odd) {
+  background: #2c2c2c;
+  color: #f0f0f0;
 }
 
 button {
   cursor: pointer;
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem 1.2rem;
+  color: #2c2c2c;
+  font-weight: 600;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background: #dedede;
 }
 
 #form-column {
@@ -67,11 +90,13 @@ form input {
   padding: 10px 5px;
   margin: 10px 0;
   width: 100%;
+  color: #2c2c2c;
+  font-weight: 600;
 }
 
 .message {
   display: block;
   margin-top: 25px;
   color: green;
-  font-weight: bold;
+  font-weight: 600;
 }
