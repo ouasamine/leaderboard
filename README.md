@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> A leaderboard list that displays players scores.
+> Leaderboard that shows the scores of different players, the scores and players infos are fetched from an external API, the user can add his name and score as well which will be sent and stored in the external API.
 
 
 ## Built With
@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
   - A web browser _(Chrome, Mozilla, Edge...)_.
-  - Git _(optional: to clone the repository)_.
+  - npm/yarn or any preferred packet manager _(In the following instructions npm will be used)_.
 
 ### Setup
 
@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple steps.
 3. To open the project you can either open the `index.html` inside the `/dist` folder **OR** run `npm run start` To run the project on webpack live server.
 
 
-## Authors
+## Author
 
 👤 **Amine**
 
