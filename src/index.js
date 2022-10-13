@@ -20,9 +20,15 @@ submitBtt.addEventListener('click', (event) => {
   const userName = formUserInput.value;
   const userScore = formscoreInput.value;
   newGame.addScore('scores/', userName, userScore)
-    .then(() => {
-      messageContainer.innerText = 'The score has been successfully added';
-      setTimeout(() => { messageContainer.innerText = ''; }, 10000);
+    .then((response) => {
+      if (response.status !== 400) {
+        messageContainer.innerText = 'The score has been successfully added';
+        setTimeout(() => { messageContainer.innerText = ''; }, 10000);
+      } else {
+        messageContainer.innerText = 'The score can\'t be added please check your inputs';
+        messageContainer.style.color = 'red';
+        setTimeout(() => { messageContainer.innerText = ''; }, 10000);
+      }
     });
 });
 

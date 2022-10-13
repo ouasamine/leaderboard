@@ -15,12 +15,6 @@ body {
   background: #0f1319;
 }
 
-#page-wrapper {
-  padding: 25px;
-  box-shadow: 1px 1px 10px 1px #5e5e5e;
-  margin: 25px;
-}
-
 h1 {
   margin: 30px 0;
   font-size: 2rem;
@@ -30,17 +24,46 @@ h2 {
   margin: 15px 0;
 }
 
+button {
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  color: #2c2c2c;
+  font-weight: 600;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background: #dedede;
+}
+
+#page-wrapper {
+  padding: 25px;
+  box-shadow: 1px 1px 10px 1px #5e5e5e;
+  margin: 25px;
+  text-align: center;
+}
+
 #content {
   display: flex;
-  gap: 125px;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 50px 0;
+  align-items: flex-start;
+  margin: 100px 0;
+}
+
+#list-column, #form-column {
+  background: #0f1319;
+  padding: 25px 50px;
+  margin: 25px 0;
+  border-radius: 10px;
+  border: 2px solid #2c2c2c;
 }
 
 #list-column .header {
   display: flex;
-  gap: 90px;
+  gap: 100px;
   align-items: center;
 }
 
@@ -58,26 +81,8 @@ ul li:nth-child(even) {
 }
 
 ul li:nth-child(odd) {
-  background: #2c2c2c;
+  background: #0f1313;
   color: #f0f0f0;
-}
-
-button {
-  cursor: pointer;
-  padding: 0.5rem 1.2rem;
-  color: #2c2c2c;
-  font-weight: 600;
-  font-family: sans-serif;
-  border: none;
-  border-radius: 3px;
-}
-
-button:hover {
-  background: #dedede;
-}
-
-#form-column {
-  width: 250px;
 }
 
 #form-column form {
@@ -89,7 +94,7 @@ button:hover {
 form input {
   padding: 10px 5px;
   margin: 10px 0;
-  width: 100%;
+  width: 300px;
   color: #2c2c2c;
   font-weight: 600;
 }
@@ -99,4 +104,6 @@ form input {
   margin-top: 25px;
   color: green;
   font-weight: 600;
+  width: 250px;
+  text-align: left;
 }
