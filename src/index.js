@@ -1,5 +1,6 @@
-import './style.css';
-import Game from './game-calss.js';
+import '../modules/style.css';
+import Game from '../modules/game-calss.js';
+import displayList from '../modules/display-funtion.js';
 
 const newGame = new Game();
 const formUserInput = document.forms['new-score']['user-name'];
@@ -9,18 +10,10 @@ const refreshBtt = document.querySelector('#refresh');
 const scoresList = document.querySelector('#list-column ul');
 const messageContainer = document.querySelector('.message');
 
-const diplayList = (scoresArray) => {
-  scoresArray.forEach((arrayObj) => {
-    const listItem = document.createElement('li');
-    listItem.innerText = `${arrayObj.user}: ${arrayObj.score}`;
-    scoresList.append(listItem);
-  });
-};
-
 newGame.getScores('scores/')
   .then((res) => res.json())
   .then((json) => {
-    diplayList(json.result);
+    displayList(json.result, scoresList);
   });
 submitBtt.addEventListener('click', (event) => {
   event.preventDefault();
@@ -38,6 +31,6 @@ refreshBtt.addEventListener('click', () => {
   newGame.getScores('scores/')
     .then((res) => res.json())
     .then((json) => {
-      diplayList(json.result);
+      displayList(json.result, scoresList);
     });
 });
