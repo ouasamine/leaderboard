@@ -39,10 +39,11 @@ button:hover {
 }
 
 #page-wrapper {
-  padding: 25px;
+  padding: 25px 0;
   box-shadow: 1px 1px 10px 1px #5e5e5e;
-  margin: 25px;
+  margin: 25px 5%;
   text-align: center;
+  border-radius: 4px;
 }
 
 #content {
@@ -50,12 +51,11 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 100px 0;
 }
 
 #list-column, #form-column {
   background: #0f1319;
-  padding: 25px 50px;
+  padding: 10px;
   margin: 25px 0;
   border-radius: 10px;
   border: 2px solid #2c2c2c;
@@ -63,7 +63,7 @@ button:hover {
 
 #list-column .header {
   display: flex;
-  gap: 100px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -94,7 +94,7 @@ ul li:nth-child(odd) {
 form input {
   padding: 10px 5px;
   margin: 10px 0;
-  width: 300px;
+  width: 100%;
   color: #2c2c2c;
   font-weight: 600;
 }
@@ -106,4 +106,42 @@ form input {
   font-weight: 600;
   width: 250px;
   text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  #page-wrapper {
+    padding: 25px 0;
+    margin: 25px 5%;
+  }
+
+  #list-column, #form-column {
+    padding: 25px;
+    margin: 25px 0;
+  }
+
+  #list-column .header {
+    gap: 50px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  #page-wrapper {
+    padding: 25px 0;
+    margin: 25px 10%;
+  }
+
+  #list-column, #form-column {
+    padding: 25px;
+    margin: 25px 0;
+  }
+
+  #list-column .header {
+    gap: 100px;
+  }
+
+  form input {
+    width: 300px;
+  }
+
 }
